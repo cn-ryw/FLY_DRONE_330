@@ -1,6 +1,6 @@
 # FLY_DRONE_345 — 自主无人机飞行系统
 
-基于 FAST-LIO2 (Mid360) + EKF + Diff-Planner 的室内外自主飞行平台。
+基于 faster-lio (Mid360) + EKF + Diff-Planner 的室内外自主飞行平台。
 
 ## 系统架构
 
@@ -28,14 +28,14 @@ PX4/MAVROS ────(/mavros/imu/data)─────────────
 |---|---|---|
 | 飞控 | PX4 (Pixhawk 系列) | 姿态控制、底层稳定 |
 | LiDAR | Livox Mid-360 | 3D 点云建图与定位 |
-| 机载电脑 | NVIDIA Jetson / x86 | 运行定位、规划、控制算法 |
+| 机载电脑 | Intel 13代 i5 Pro | 运行定位、规划、控制算法 |
 | 相机 (可选) | Intel RealSense D435i | 视觉辅助 |
 
 ## 软件栈
 
 | 模块 | 路径 | 功能 |
 |---|---|---|
-| **faster_lio** | `src/realflight_modules/mid360_fastlio/` | FAST-LIO2 激光惯性里程计 |
+| **faster_lio** | `src/realflight_modules/mid360_fastlio/` | faster-lio 激光惯性里程计 |
 | **ekf_pose** | `src/realflight_modules/ekf_pose/` | EKF 多传感器融合 (LIO + IMU) |
 | **px4ctrl** | `src/realflight_modules/px4ctrl/` | 几何控制器，轨迹跟踪 |
 | **diff_planner** | `src/diff_planner/` | 差分平坦轨迹规划 + 避障 |
@@ -140,6 +140,6 @@ fasterlio2diff_ws/
 
 ## 致谢
 
-- [FAST-LIO2](https://github.com/hku-mars/FAST_LIO) — HKU Mars Lab
+- [faster-lio](https://github.com/hku-mars/FAST_LIO) — HKU Mars Lab
 - [Ego-Planner](https://github.com/ZJU-FAST-Lab/ego-planner) — ZJU FAST Lab
 - [px4ctrl](https://github.com/ZJU-FAST-Lab/px4ctrl) — ZJU FAST Lab
