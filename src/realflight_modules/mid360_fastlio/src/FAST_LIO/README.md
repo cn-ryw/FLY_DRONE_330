@@ -52,7 +52,7 @@
 
 **Contributors**
 
-[Wei Xu 徐威](https://github.com/XW-HKU)，[Yixi Cai 蔡逸熙](https://github.com/Ecstasy-EC)，[Dongjiao He 贺东娇](https://github.com/Joanna-HE)，[Fangcheng Zhu 朱方程](https://github.com/zfc-zfc)，[Jiarong Lin 林家荣](https://github.com/ziv-lin)，[Zheng Liu 刘政](https://github.com/Zale-Liu), [Borong Yuan](https://github.com/borongyuan)
+[cn-ryw](https://github.com/cn-ryw)
 
 <!-- <div align="center">
     <img src="doc/results/HKU_HW.png" width = 49% >
