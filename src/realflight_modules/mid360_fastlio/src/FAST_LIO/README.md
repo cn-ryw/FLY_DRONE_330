@@ -54,6 +54,8 @@
 
 [cn-ryw](https://github.com/cn-ryw)
 
+Original FAST-LIO authors and historical contributors are credited in the upstream project: https://github.com/hku-mars/FAST_LIO
+
 <!-- <div align="center">
     <img src="doc/results/HKU_HW.png" width = 49% >
     <img src="doc/results/HKU_MB_001.png" width = 49% >
