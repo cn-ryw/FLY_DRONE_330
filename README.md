@@ -1,15 +1,15 @@
 # FLY_DRONE_330 — 自主无人机飞行系统
 
-基于 faster-lio (Mid360) + EKF + Diff-Planner 的室内外自主飞行平台。
+基于 fast-lio2 (Mid360  高频版)  Diff-Planner 的室内外自主飞行平台。
 
 ## 系统架构
 
 ```
-Mid360 LiDAR ──(pointcloud+imu)──> faster_lio ──(/Odometry)──> EKF
+Mid360 LiDAR ──(pointcloud+imu)──> fast_lio2 ──(/Odometry)─────────> 
                                                                    │
-PX4/MAVROS ────(/mavros/imu/data)─────────────────────────────────┘
+PX4/MAVROS ────(/livox/imu)────────────────────────────────────────┘
                                                                    │
-                                                      (/ekf/ekf_odom)
+                                                      (/Odom_high_freq)
                                                              │
                 ┌────────────────────────────────────────────┤
                 ▼                            ▼               ▼
@@ -18,8 +18,8 @@ PX4/MAVROS ────(/mavros/imu/data)─────────────
                 └──(/setpoints_cmd)──────────►               │
                                             │                │
                                 PX4 ◄───────┘                │
-                                                              │
-                         触发: RC CH8 / RViz 2D Nav Goal
+                                                             │
+                         触发: RC CH8 / RViz 2D/3D Nav Goal
 ```
 
 ## 硬件要求
