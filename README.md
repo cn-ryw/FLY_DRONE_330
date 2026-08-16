@@ -29,13 +29,13 @@ PX4/MAVROS ────(/livox/imu)───────────────
 | 飞控 | PX4 (Pixhawk 系列) | 姿态控制、底层稳定 |
 | LiDAR | Livox Mid-360 | 3D 点云建图与定位 |
 | 机载电脑 | Intel 13代 i5 Pro | 运行定位、规划、控制算法 |
-| 相机 (可选) | Intel RealSense D435i | 视觉辅助 |
+| 相机 (可选) | Intel RealSense D435 | 视觉辅助 |
 
 ## 软件栈
 
 | 模块 | 路径 | 功能 |
 |---|---|---|
-| **faster_lio** | `src/realflight_modules/mid360_fastlio/` | faster-lio 激光惯性里程计 |
+| **faster_lio** | `src/realflight_modules/mid360_fastlio/` | fastlio2 激光惯性里程计高频版 |
 | **ekf_pose** | `src/realflight_modules/ekf_pose/` | EKF 多传感器融合 (LIO + IMU) |
 | **px4ctrl** | `src/realflight_modules/px4ctrl/` | 几何控制器，轨迹跟踪 |
 | **diff_planner** | `src/diff_planner/` | 差分平坦轨迹规划 + 避障 |
